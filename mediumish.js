@@ -147,3 +147,16 @@ jQuery(document).ready(function($){
 
 
 });
+    // Nextprev
+  jQuery(document).ready(function($){
+  (function(){   
+  var newerLink = $('a.blog-pager-newer-link');
+  var olderLink = $('a.blog-pager-older-link');
+  $.get(newerLink.attr('href'), function (data) {
+  newerLink.html($(data).find('.mainheading h1.posttitle').text()); //disesuaikan untuk judul
+  },"html");
+  $.get(olderLink.attr('href'), function (data2) {
+  olderLink.html($(data2).find('.mainheading h1.posttitle').text()); //disesuaikan untuk judul
+  },"html");
+  })(); 
+  });
