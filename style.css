@@ -1088,7 +1088,7 @@ input[type=submit] {
 	color:#fff;
 	cursor:pointer;
 }
-.bottompagination span.navigation, .bottompagination .pagination {
+.bottompagination div.navigation, .bottompagination .pagination {
 	display:block;
 	font-size:0.93rem;
 	padding:15px 0;
@@ -1099,10 +1099,10 @@ input[type=submit] {
 	border-top:1px solid #ddd;
     border-radius:0;
 }
-.bottompagination span.navigation a {
+.bottompagination div.navigation a {
 	color:#999;
 }
-.bottompagination span.navigation li, .bottompagination .pagination .page-numbers {
+.bottompagination div.navigation li, .bottompagination .pagination .page-numbers {
 	display:inline-block;
 	list-style:none;
 	margin:0 2px;
@@ -1112,11 +1112,11 @@ input[type=submit] {
 	position:relative;
     color:#999;
 }
-.bottompagination span.navigation li a.active,  .bottompagination .pagination .page-numbers.current {
+.bottompagination div.navigation li a.active,  .bottompagination .pagination .page-numbers.current {
 	color:#111;
 	font-weight:700;
 }
-.bottompagination span.navigation li a.active:after, .bottompagination .pagination .page-numbers.current:after {
+.bottompagination div.navigation li a.active:after, .bottompagination .pagination .page-numbers.current:after {
 	content:"";
 	background-color:#111;
 	height:1px;
@@ -1139,7 +1139,7 @@ li.disabled a {
 .pointerup i.fa {
 	color:#eaeaea;
 }
-.bottompagination span.navigation i {
+.bottompagination div.navigation i {
 	display:inline-block;
 }
 .morefromcategory {
@@ -1330,7 +1330,7 @@ hr {
 }
 @media (max-width:767px) {
     .navbar {padding:0;}
-    .bottompagination span.navigation li, .bottompagination .pagination .page-numbers {
+    .bottompagination div.navigation li, .bottompagination .pagination .page-numbers {
         padding: 0 10px;
     }
 	.carousel-excerpt .title {
